@@ -15,10 +15,12 @@
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="100sp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        android:text="Det här är en textrad som ska bli ganska lång så att det visar fler rader" />
+        android:padding="15sp"
+        android:text="Det här är en textrad som ska bli ganska lång så att det visar fler rader. " />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,16 +29,21 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Load ConstraintLayout" />
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".7"
+            android:paddingLeft="15sp"
+            android:text="Load ConstraintLayout"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/button"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_marginRight="15sp"
+            android:layout_weight="0.3"
+            android:onClick="loadConstraintLayout"
             android:text="LOAD" />
     </LinearLayout>
 
@@ -47,22 +54,30 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Load TableLayout" />
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.7"
+            android:paddingLeft="15sp"
+            android:text="Load TableLayout"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_marginRight="15sp"
+            android:layout_weight=".3"
+            android:onClick="loadTableLayout"
             android:text="LOAD" />
     </LinearLayout>
 
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="200sp"
+        android:layout_marginRight="15sp" />
 
 </LinearLayout>
